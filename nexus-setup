@@ -1,0 +1,12 @@
+
+      sudo apt update 
+      sudo apt install openjdk-11-jdk -y
+      sudo cd /opt
+      sudo wget -O nexus.tar.gz https://download.sonatype.com/nexus/3/latest-unix.tar.gz
+      sudo tar -xvf nexus.tar.gz
+      sudo mv nexus-3* nexus
+      sudo adduser nexus
+      sudo chown -R nexus:nexus /opt/nexus
+      sudo chown -R nexus:nexus /opt/sonatype-work
+      sudo vi  /app/nexus/bin/nexus.rc 
+
